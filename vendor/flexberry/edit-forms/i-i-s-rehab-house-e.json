@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "House",
+  "name": "IISRehabHouseE",
+  "className": "HouseE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rehab-house",
+      "modelProjection": "HouseE"
+    }
+  ]
+}

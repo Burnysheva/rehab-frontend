@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rehab-house-e",
+  "editForm": "i-i-s-rehab-house-e",
+  "external": false,
+  "caption": "House",
+  "name": "IISRehabHouseL",
+  "className": "HouseL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rehab-house",
+      "modelProjection": "HouseL"
+    }
+  ]
+}

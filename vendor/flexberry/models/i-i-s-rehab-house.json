@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISRehabHouse",
+  "modelName": "i-i-s-rehab-house",
+  "className": "House",
+  "nameSpace": "IIS.Rehab",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "addressString",
+      "type": "string",
+      "flexberryType": "String",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "city",
+      "type": "string",
+      "flexberryType": "String120",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "street",
+      "type": "string",
+      "flexberryType": "String120",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "number",
+      "type": "string",
+      "flexberryType": "String20",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "HouseE",
+      "modelName": "i-i-s-rehab-house",
+      "attrs": [
+        {
+          "name": "addressString",
+          "caption": "Address string",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "city",
+          "caption": "City",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "street",
+          "caption": "Street",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "HouseL",
+      "modelName": "i-i-s-rehab-house",
+      "attrs": [
+        {
+          "name": "addressString",
+          "caption": "Address string",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "city",
+          "caption": "City",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "street",
+          "caption": "Street",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

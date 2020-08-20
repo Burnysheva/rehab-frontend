@@ -1,0 +1,122 @@
+﻿{
+  "name": "IISRehabIdentityDoc",
+  "modelName": "i-i-s-rehab-identity-doc",
+  "className": "IdentityDoc",
+  "nameSpace": "IIS.Rehab",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "series",
+      "type": "string",
+      "flexberryType": "String",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "number",
+      "type": "string",
+      "flexberryType": "String",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "issueDate",
+      "type": "string",
+      "flexberryType": "tNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "issueOrg",
+      "type": "string",
+      "flexberryType": "String",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "doctype",
+      "relatedTo": "i-i-s-rehab-document-type",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "i-i-s-rehab-client",
+      "inverse": "identityDoc"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "IdentityDocE",
+      "modelName": "i-i-s-rehab-identity-doc",
+      "attrs": [
+        {
+          "name": "series",
+          "caption": "Series",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "issueDate",
+          "caption": "Issue date",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "issueOrg",
+          "caption": "Issue org",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "doctype",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Doctype",
+          "name": "doctype",
+          "relatedTo": "i-i-s-rehab-document-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

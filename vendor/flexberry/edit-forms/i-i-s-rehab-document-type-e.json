@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Document type",
+  "name": "IISRehabDocumentTypeE",
+  "className": "DocumentTypeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rehab-document-type",
+      "modelProjection": "DocumentTypeE"
+    }
+  ]
+}

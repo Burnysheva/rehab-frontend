@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "House",
+      "projection": "HouseL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "addressreg",
+      "projection": "HouseL",
+      "detailModelName": null
+    },
+    {
+      "master": "doctype",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "IdentityDoc.doctype",
+      "projection": "DocumentTypeL",
+      "detailModelName": "i-i-s-rehab-identity-doc"
+    }
+  ],
+  "external": false,
+  "caption": "Client",
+  "name": "IISRehabclientE",
+  "className": "clientE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rehab-client",
+      "modelProjection": "clientE"
+    }
+  ]
+}

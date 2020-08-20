@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-rehab-document-type-e",
+  "editForm": "i-i-s-rehab-document-type-e",
+  "external": false,
+  "caption": "Document type",
+  "name": "IISRehabDocumentTypeL",
+  "className": "DocumentTypeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-rehab-document-type",
+      "modelProjection": "DocumentTypeL"
+    }
+  ]
+}
